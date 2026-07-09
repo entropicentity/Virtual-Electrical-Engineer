@@ -1,0 +1,2 @@
+Uses preinstalled/available packages: schemdraw, matplotlib, pandas, pillow, reportlab.
+Run: python3 /workspace/snake_matrix_circuit/generate_package.py

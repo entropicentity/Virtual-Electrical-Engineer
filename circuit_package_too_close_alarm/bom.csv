@@ -1,0 +1,12 @@
+Ref,Item,Specification,Qty,Unit Price USD,Extended USD,Supplier,Purchase Link
+BT1,2x18650 battery holder with cells,"2-cell Li-ion pack, 7.4V nominal",1,12.00,12.00,Generic / Amazon,https://www.amazon.com/s?k=2x18650+battery+holder+with+cells
+S1,Mini SPST slide switch,"Power switch, >=1A @ 12V",1,0.80,0.80,Adafruit / Amazon,https://www.adafruit.com/search?q=slide+switch
+REG1,LM2596 buck converter module,"7-24V in, 5V out adjustable, >=1A",1,2.50,2.50,Amazon / eBay,https://www.amazon.com/s?k=LM2596+buck+converter+module
+U1,Arduino Nano compatible,ATmega328P development board,1,6.50,6.50,Amazon / SparkFun,https://www.amazon.com/s?k=arduino+nano+compatible
+U2,HC-SR04 ultrasonic sensor module,2cm-400cm distance sensor,1,2.20,2.20,Amazon / Adafruit,https://www.amazon.com/s?k=HC-SR04
+M1,SG90 micro servo,5V 9g positional servo,1,3.20,3.20,Amazon / TowerPro,https://www.amazon.com/s?k=SG90+servo
+BZ1,Active buzzer module,5V self-oscillating buzzer,1,1.50,1.50,Amazon,https://www.amazon.com/s?k=5V+active+buzzer+module
+C1,Electrolytic capacitor,470uF 10V radial,1,0.25,0.25,DigiKey,https://www.digikey.com/en/products/filter/aluminum-electrolytic-capacitors/58?s=N4IgTCBcDaIA4GMCmIC6BfIA
+C2,Ceramic capacitor,0.1uF 50V X7R,1,0.05,0.05,DigiKey,https://www.digikey.com/en/products/filter/ceramic-capacitors/60
+J1,Hook-up wire / jumper set,22 AWG assorted,1,2.00,2.00,Amazon,https://www.amazon.com/s?k=22awg+hook+up+wire
+HW1,Sensor mounting bracket,HC-SR04 to SG90 bracket,1,1.50,1.50,Amazon / 3D print,https://www.amazon.com/s?k=HC-SR04+SG90+mount

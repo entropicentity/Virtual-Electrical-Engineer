@@ -1,0 +1,8 @@
+RefDes,Description,Qty,UnitPriceUSD,ExtendedPriceUSD,Supplier,Link
+B1,"3x AAA battery holder, series output",1,1.50,1.50,Generic,https://www.amazon.com/s?k=3x+aaa+battery+holder
+BT1,AAA alkaline battery,3,0.75,2.25,Generic,https://www.amazon.com/s?k=aaa+alkaline+batteries
+S1,SPST on/off switch,1,0.60,0.60,Generic,https://www.amazon.com/s?k=spst+mini+switch
+D1,"5 mm white LED, Vf ~3.0-3.2 V @ 20 mA",1,0.20,0.20,Generic,https://www.amazon.com/s?k=5mm+white+led
+R1,"68 ohm resistor, 1/4 W",1,0.05,0.05,Generic,https://www.digikey.com/en/products/filter/through-hole-resistors/53
+J1,Hookup wire / spring contacts / assembly hardware,1,0.75,0.75,Generic,https://www.amazon.com/s?k=hookup+wire
+TOTAL,,,,5.35,,

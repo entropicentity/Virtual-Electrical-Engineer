@@ -1,0 +1,12 @@
+RefDes,Description,Qty,UnitPriceUSD,ExtendedPriceUSD,Supplier,Link
+B1,9 V battery or regulated 9 V DC source,1,4.00,4.00,Generic,https://www.amazon.com/s?k=9v+battery
+U1,Arduino Uno or Nano compatible 5 V board,1,8.00,8.00,Arduino-compatible,https://www.amazon.com/s?k=arduino+uno+compatible
+D1,"High-power white LED, ~1 W, Vf ~3.2 V @ 350 mA",1,1.50,1.50,Star-mounted LED,https://www.amazon.com/s?k=1w+white+led+star
+Q1,"Logic-level N-channel MOSFET, e.g. IRLZ44N",1,1.20,1.20,IRLZ44N,https://www.digikey.com/en/products/filter/mosfets-single/278
+R1,"15 ohm, 5 W resistor for approximate LED current limiting",1,1.50,1.50,Wirewound resistor,https://www.digikey.com/en/products/filter/chassis-mount-resistors/54
+R2,"220 ohm resistor, MOSFET gate series resistor",1,0.05,0.05,Generic,https://www.digikey.com/en/products/filter/through-hole-resistors/53
+R3,"10 kohm resistor, MOSFET gate pulldown",1,0.05,0.05,Generic,https://www.digikey.com/en/products/filter/through-hole-resistors/53
+C1,"100 uF electrolytic capacitor, >=16 V",1,0.20,0.20,Generic,https://www.digikey.com/en/products/filter/aluminum-electrolytic-capacitors/58
+C2,0.1 uF ceramic capacitor,1,0.05,0.05,Generic,https://www.digikey.com/en/products/filter/ceramic-capacitors/60
+J1,Battery clip / wiring leads,1,0.80,0.80,Generic,https://www.amazon.com/s?k=9v+battery+clip
+TOTAL,,,,17.35,,

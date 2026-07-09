@@ -1,0 +1,35 @@
+Goal
+Design a conceptual 12 V motorized safe latch controller that locks or unlocks by reversing a geared DC motor. The user asked for a keypad-based design, with automatic end-of-travel stopping for safety.
+
+Assumptions
+- This is a conceptual electronics package for a hobby/prototype safe latch, not a certified physical security product.
+- A low-speed 12 V DC geared motor rotates a cam or lead-screw that moves the latch between LOCKED and UNLOCKED positions.
+- Two limit switches are mechanically positioned so they close at the ends of travel and inform the controller when the latch is fully locked or fully unlocked.
+- A 4x4 matrix keypad provides the unlock/lock command input through firmware.
+- The motor current is kept within the TB6612FNG driver capability; if the real actuator stalls above about 1 A average, a higher-current H-bridge is needed.
+- The 12 V input comes from an external DC adapter or internal 12 V system and is stepped down to 5 V for logic.
+
+Basic circuit description
+The circuit is divided into five blocks: input power, logic power conversion, keypad/controller, motor driver, and end-of-travel sensing. A 12 V input rail feeds the geared latch motor directly through the motor driver and also feeds a 5 V buck converter for logic power. The ATtiny1616 microcontroller scans a 4x4 keypad, validates a PIN in firmware, and commands the H-bridge motor driver to run forward for unlock or reverse for lock. Two normally-open limit switches are wired to microcontroller inputs with pull-ups so that each end position is sensed independently. Firmware stops the motor immediately when the relevant limit switch becomes active, and can also impose a timeout as a backup fault response. The TB6612FNG driver receives two direction lines plus a PWM/enable line and drives the motor bidirectionally. Protection and support parts include local decoupling capacitors on the MCU and motor driver, bulk capacitance on the 12 V rail near the driver, a fuse on the 12 V input, and a shared ground reference between logic and motor power.
+
+Main components
+- U1: ATtiny1616 8-bit microcontroller for keypad scanning and state logic
+- U2: TB6612FNG dual H-bridge used as one DC motor channel
+- U3: LM2596 buck converter module adjusted to 5 V
+- K1: 4x4 matrix keypad
+- M1: 12 V geared DC motor coupled to latch mechanism
+- S1: Locked-position limit switch
+- S2: Unlocked-position limit switch
+- F1: 2 A input fuse
+- C1/C2/C3/C4: bulk and local decoupling capacitors
+
+Firmware need
+Yes. Firmware is required to scan the keypad matrix, compare entered PIN codes, command lock/unlock motor direction, monitor both limit switches, enforce a motor timeout, optionally debounce keys and switches, and optionally drive a status LED or buzzer.
+
+Important unknowns / verification needed
+- Real motor running and stall current
+- Mechanical torque needed to move the latch
+- Exact keypad model and connector style
+- Whether fail-secure or fail-safe behavior is wanted on power loss
+- Whether tamper sensors, battery backup, or door-position sensing are required
+- Whether a higher-security product should use a certified safe lock assembly instead of a custom mechanism

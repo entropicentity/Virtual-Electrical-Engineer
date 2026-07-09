@@ -1,0 +1,29 @@
+{
+  "goal": "USB-powered Snake game on a single 8x8 LED dot-matrix with 4 pushbuttons.",
+  "assumptions": [
+    "Single-player Snake uses one MAX7219-driven 8x8 module as the whole playfield.",
+    "Arduino Nano-compatible board handles display refresh, game logic, scoring, and button debouncing.",
+    "USB 5V is the system rail. The MAX7219 module and Nano both run from 5V logic.",
+    "Buttons use the Nano internal pull-ups in firmware; external 10k resistors are included as optional support parts.",
+    "This is a prototyping-friendly design, not a production EMI/safety-certified product."
+  ],
+  "basic_circuit_description": [
+    "U1 (Arduino Nano) is the controller. It reads S1-S4 direction buttons and updates the game state.",
+    "U2 is a MAX7219 LED matrix module connected by DIN, CLK, and CS/LOAD to U1 digital pins.",
+    "The 5V rail from USB powers U1 and U2 in parallel, with a common ground.",
+    "Each pushbutton connects between a Nano GPIO pin and ground so a press reads active-low.",
+    "Local 100nF decoupling capacitors are placed near the Nano 5V pin and near the matrix module VCC input."
+  ],
+  "main_components": [
+    "Arduino Nano compatible board",
+    "MAX7219 8x8 LED matrix module",
+    "4 tactile buttons",
+    "2 decoupling capacitors"
+  ],
+  "firmware_needed": true,
+  "important_unknowns": [
+    "Whether you want sound, score display, or larger cascaded matrices later.",
+    "Mechanical enclosure, PCB, or breadboard final build style."
+  ],
+  "estimated_total_usd": 10.6
+}

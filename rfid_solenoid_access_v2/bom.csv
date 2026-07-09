@@ -1,0 +1,17 @@
+Item,Refs,Qty,Description,Specs,Part,Package,Unit USD,Extended USD,Supplier,URL,Notes
+1,U1,1,Arduino Nano,"ATmega328P, 5V logic, 7-12V VIN",A000005,Module,27.1,27.1,Arduino,https://store.arduino.cc/en-se/products/arduino-nano,Official board price
+2,U2,1,MFRC522 RFID module,"13.56 MHz, SPI, 3.3V supply",RC522 module,Module,9.9,9.9,RobotShop,https://www.robotshop.com/products/mifare-rc522-module-rfid-reader,Breakout/module pricing
+3,REG1,1,3.3V regulator,AMS1117-3.3 regulator module,AMS1117-3.3 module,Module,3.15,3.15,Maker Store,https://www.makerstore.com.au/product/ams1117-3-3v-step-down/,Powers MFRC522
+4,Q1,1,Logic-level N-MOSFET,55V TO-220 logic MOSFET,IRLZ44NPBF,TO-220,2.5,2.5,Estimate,https://www.infineon.com/part/IRLZ44N,Estimated
+5,D1,1,Flyback diode,"3A, 1000V axial diode",1N5408-E3/54,DO-201AD,0.54,0.54,DigiKey,https://www.digikey.ca/en/products/detail/vishay-general-semiconductor-diodes-division/1N5408-E3-54/76461,Across solenoid
+6,LOCK1,1,12V cabinet solenoid lock,"Intermittent-duty 12V lock, ~0.4-1.0A",TD-SLOCK2 / equivalent,Lock assembly,8.99,8.99,Representative listing,https://techdelivers.com/DC-12V-Solenoid-Lock-for-Cabinets-Cabinet-Locking-Solenoid-with-12V-Power,Representative part
+7,R1,1,Gate resistor,"220 ohm, 1/4W, 5%",generic,Axial,0.1,0.1,Estimate,https://www.digikey.com/,
+8,R2,1,Gate pulldown,"100k ohm, 1/4W, 5%",generic,Axial,0.1,0.1,Estimate,https://www.digikey.com/,
+9,"R3,R4",2,LED resistors,"330 ohm, 1/4W, 5%",generic,Axial,0.1,0.2,Estimate,https://www.digikey.com/,
+10,"R5,R6,R7,R11",4,Top divider resistors,"2.2k ohm, 1/4W, 5%",generic,Axial,0.1,0.4,Estimate,https://www.digikey.com/,Nano->RC522 level reduction
+11,"R8,R9,R10,R12",4,Bottom divider resistors,"3.3k ohm, 1/4W, 5%",generic,Axial,0.1,0.4,Estimate,https://www.digikey.com/,Nano->RC522 level reduction
+12,LED1,1,Green LED,5mm indicator LED,generic,THT,0.2,0.2,Estimate,https://www.digikey.com/,Access granted
+13,LED2,1,Red LED,5mm indicator LED,generic,THT,0.2,0.2,Estimate,https://www.digikey.com/,Access denied
+14,BZ1,1,Active buzzer,5V active buzzer,generic,THT,1.0,1.0,Estimate,https://www.digikey.com/,Optional
+15,C1,1,Bulk capacitor,100uF 25V electrolytic,generic,Radial,0.35,0.35,Estimate,https://www.digikey.com/,12V rail bulk cap
+16,C2,1,Regulator output capacitor,10uF 10V electrolytic/ceramic,generic,Radial,0.2,0.2,Estimate,https://www.digikey.com/,3.3V rail support

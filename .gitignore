@@ -1,0 +1,11 @@
+venv/
+venv_circuit/
+venv_temp_logger/
+.cache/
+.code-server/
+.config/
+.local/
+.vscode/
+lost+found/
+__pycache__/
+*.pyc

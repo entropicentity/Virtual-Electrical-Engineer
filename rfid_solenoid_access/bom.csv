@@ -1,0 +1,19 @@
+Item,Refs,Qty,Description,Required Specs,Mfr Part,Package,Unit Price USD,Extended USD,Supplier,URL,Notes
+1,U1,1,Arduino Nano,"ATmega328P, 5 V logic, VIN 7-12 V",A000005,Through-hole module,27.1,27.1,Arduino Store,https://store.arduino.cc/en-se/products/arduino-nano,Official board; clone can reduce cost
+2,U2,1,MFRC522 RFID reader module,"13.56 MHz, SPI, 3.3 V supply",SBC-RFID-RC522,Module,9.9,9.9,RobotShop,https://www.robotshop.com/products/mifare-rc522-module-rfid-reader,Includes tags on many kits; module logic is 3.3 V
+3,Q1,1,N-channel MOSFET,"55 V, logic-level gate, TO-220",IRLZ44NPBF,TO-220,2.5,2.5,Infineon / estimate,https://www.infineon.com/part/IRLZ44N,Estimated distributor pricing
+4,D1,1,Flyback diode,"1 kV, 3 A axial rectifier",1N5408-E3/54,DO-201AD,0.54,0.54,DigiKey,https://www.digikey.ca/en/products/detail/vishay-general-semiconductor-diodes-division/1N5408-E3-54/76461,Across solenoid coil
+5,REG1,1,3.3 V regulator module,"AMS1117-3.3, up to 800 mA module",AMS1117-3.3 module,Module,3.15,3.15,Maker Store,https://www.makerstore.com.au/product/ams1117-3-3v-step-down/,Linear regulator module
+6,LOCK1,1,12 V cabinet lock solenoid,"12 V DC, approx 0.4-0.8 A intermittent",TD-SLOCK2 / equivalent,Solenoid lock,8.99,8.99,Estimated market price,https://techdelivers.com/DC-12V-Solenoid-Lock-for-Cabinets-Cabinet-Locking-Solenoid-with-12V-Power,Representative 12 V lock
+7,R1,1,Gate resistor,"220 ohm, 0.25 W, 5%",CF14JT220R,Axial,0.1,0.1,Estimate,https://www.digikey.com/,MOSFET gate series resistor; estimated price
+8,R2,1,Gate pull-down resistor,"100k ohm, 0.25 W, 5%",CF14JT100K,Axial,0.1,0.1,Estimate,https://www.digikey.com/,Keeps MOSFET off at reset; estimated price
+9,"R3,R4",2,LED resistors,"330 ohm, 0.25 W, 5%",CF14JT330R,Axial,0.1,0.2,Estimate,https://www.digikey.com/,For green/red LEDs; estimated price
+10,"R5,R6,R7",3,SPI level-shift resistors,"2.2k ohm, 0.25 W, 5%",CF14JT2K20,Axial,0.1,0.3,Estimate,https://www.digikey.com/,Used in dividers on SCK/MOSI/RST from 5 V Nano
+11,"R8,R9,R10",3,SPI divider resistors,"3.3k ohm, 0.25 W, 5%",CF14JT3K30,Axial,0.1,0.3,Estimate,https://www.digikey.com/,Pairs with 2.2k to reduce 5 V signals to ~3.0 V
+12,LED1,1,Green LED,5 mm indicator LED,LTL-307EE,T-1 3/4,0.2,0.2,Estimate,https://www.digikey.com/,Access granted
+13,LED2,1,Red LED,5 mm indicator LED,LTL-307EE or similar,T-1 3/4,0.2,0.2,Estimate,https://www.digikey.com/,Access denied
+14,BZ1,1,5 V active buzzer,Panel/PCB buzzer,CEM-1203(42),THT,1.0,1.0,Estimate,https://www.digikey.com/,Optional
+15,C1,1,Bulk capacitor 12 V rail,"100 uF, 25 V electrolytic",UVR1E101MED,Radial,0.35,0.35,Estimate,https://www.digikey.com/,Near input and lock driver
+16,"C2,C3",2,Decoupling capacitors,"0.1 uF, 50 V ceramic",K104K15X7RF5UH5,Radial/ceramic,0.08,0.16,Estimate,https://www.digikey.com/,Nano/regulator bypass
+17,J1,1,DC barrel jack,5.5 mm x 2.1 mm panel or PCB jack,PJ-102A,Connector,0.75,0.75,Estimate,https://www.digikey.com/,12 V input
+18,"J2,J3",2,2-pin screw terminals,5.08 mm pitch terminal block,OSTVN02A150,Terminal block,0.45,0.9,Estimate,https://www.digikey.com/,Power input and solenoid output

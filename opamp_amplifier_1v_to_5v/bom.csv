@@ -1,0 +1,10 @@
+RefDes,Description,Qty,UnitPriceUSD,ExtendedPriceUSD,Supplier,Link
+U1,"General-purpose op-amp, e.g. TL081/TL071",1,0.80,0.80,TL081CP,https://www.digikey.com/en/products/filter/linear-amplifiers-instrumentation-op-amps-buffer-amps/687
+R1,"10 kohm resistor, feedback-to-ground gain resistor",1,0.05,0.05,Generic,https://www.digikey.com/en/products/filter/through-hole-resistors/53
+R2,"40 kohm resistor, feedback resistor",1,0.05,0.05,Generic,https://www.digikey.com/en/products/filter/through-hole-resistors/53
+C1,0.1 uF ceramic bypass capacitor for +V rail,1,0.05,0.05,Generic,https://www.digikey.com/en/products/filter/ceramic-capacitors/60
+C2,0.1 uF ceramic bypass capacitor for -V rail,1,0.05,0.05,Generic,https://www.digikey.com/en/products/filter/ceramic-capacitors/60
+J1,Input connector / signal source interface,1,0.50,0.50,Generic,https://www.amazon.com/s?k=terminal+block+connector
+J2,Output connector / load interface,1,0.50,0.50,Generic,https://www.amazon.com/s?k=terminal+block+connector
+PS1,"Dual supply source, +/-12 V bench supply or equivalent",1,15.00,15.00,Illustrative,https://www.amazon.com/s?k=dual+power+supply+bench
+TOTAL,,,,17.00,,
